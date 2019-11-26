@@ -1,8 +1,8 @@
 import React from 'react';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-import Index from './tabs/Index';
-import CameraPage from './tabs/Camera/CameraPage';
+import Index from './Tabs/Index';
+import CameraPage from './Tabs/Camera/CameraPage';
 // import * as tf from '@tensorflow/tfjs';
 
 const RootStack = createStackNavigator(
