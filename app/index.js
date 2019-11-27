@@ -10,6 +10,7 @@ import Home from './tabs/Home/index';
 import CameraExample from './tabs/Camera/index';
 import Results from './tabs/Results/index';
 import PhotoScreen from './tabs/Results/photoScreen/index';
+import NavigationService from './NavigationService'
 
 const TabConfig = {
   Home: {
@@ -50,7 +51,7 @@ const TabStyleConfig = {
   },
 }
 
-const PhotoNavigator = createStackNavigator({
+const PhotoNavigator = createSwitchNavigator({
   PhotoScreen: {
     screen: PhotoScreen,
   },
@@ -58,14 +59,19 @@ const PhotoNavigator = createStackNavigator({
 
 const TabNavigator = createBottomTabNavigator(TabConfig, TabStyleConfig);
 
-const AppNavigator = createSwitchNavigator({
-  Tabs: {
-    screen: TabNavigator,
+const AppNavigator = createStackNavigator(
+  {
+    Tabs: {
+      screen: TabNavigator,
+      navigationOptions: {
+        header: null,
+      }
+    },
+    Photos: {
+      screen: PhotoNavigator
+    }
   },
-  Photos: {
-    screen: PhotoNavigator,
-  },
-});
+);
 
 const Navigation = createAppContainer(AppNavigator);
 
@@ -74,7 +80,9 @@ export default class App extends React.Component {
     const store = createStore(photoReducer);
     return (
       <Provider store={store}>
-        <Navigation />
+        <Navigation ref={navigatorRef => {
+          NavigationService.setTopLevelNavigator(navigatorRef);
+          }}/>
       </Provider>
     );
   }

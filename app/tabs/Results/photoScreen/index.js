@@ -4,8 +4,9 @@ import Constants from 'expo-constants';
 
 class PhotoScreen extends React.Component {
   render() {
+      console.log(this.props.navigation)
         return(
-            <View><Text>Hello</Text></View>
+            <View><Text>{this.props.navigation.getParam('photo').uri}</Text></View>
         );
     }
 }

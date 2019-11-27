@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Image, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
+import NavigationService from '../../NavigationService';
 
 export default class ClickablePhoto extends React.Component {
   render() {
@@ -7,8 +8,7 @@ export default class ClickablePhoto extends React.Component {
       <View>
         <TouchableOpacity
           onPress={() => {
-            console.log('here');
-            this.props.navigation.navigate('PhotoScreen');
+            NavigationService.navigate('PhotoScreen', { photo: this.props.photo });
           }}>
           <Image source={{ uri: this.props.photo.uri }} style={styles.image} />
         </TouchableOpacity>
