@@ -17,6 +17,8 @@ The end goal is for the app to work in the following way:
 ### *Current App Progress:*
 ###### App Visual Design:
 - <del>Create basic 3 tab application with screens for: Home, Camera, and Results of image classification</del>
+- <del>Allow users to take photos that save to the Results tab</del>
+- <del>Allow users to click photos they've already taken to view Spotify recommendations (randomly recommending as of now)</del>
 - Add grabbing photos from camera roll
 - Make selfie's save the way a user would expect (no selfie flipping)
 - <del>Add dark theme (personal preference)</del>
@@ -30,6 +32,7 @@ The end goal is for the app to work in the following way:
 - Write on photos page what type of music photo was classified to
 - Add background/header to images page or home page so they aren't so plain
 ###### App Optimization and Design:
+- <del>Fetch request from Spotify working and returning recommendations based on requested category</del>
 - Figure out how to add TensorFlow model or maybe try another ML platform
 - Save Spotify auth token and expiration time to Redux store instead of asking for a new one on each call (waiting to implement TensorFlow)
 - Save Spotify recommendations to Redux store instead of asking for new ones each time (waiting to implement TensorFlow)
