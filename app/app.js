@@ -9,7 +9,6 @@ import NavigationService from './NavigationService'
 import { ApplicationProvider, BottomNavigation, BottomNavigationTab, Layout } from 'react-native-ui-kitten';
 import { mapping, dark } from '@eva-design/eva';
 import { Icon } from 'react-native-vector-icons/FontAwesome5';
-import { BlurView } from 'expo-blur';
 import Home from './tabs/Home/Home';
 import CameraScreen from './tabs/Camera/CameraScreen';
 import Results from './tabs/Results/Results';

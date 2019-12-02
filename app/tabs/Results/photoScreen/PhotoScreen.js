@@ -18,7 +18,7 @@ class PhotoScreen extends React.Component {
         classification: randomTypes.returnRandomGenre() // Using this until I figure out how to import TF model
     }
 
-    componentDidMount = () => {
+    componentDidMount = async() => {
         if (this.props.spotifyAuth.authorizationToken === null) {
             this.generateSpotifyAccessToken().then(
                 (data) => {
@@ -103,7 +103,7 @@ class PhotoScreen extends React.Component {
                         </Layout>
                         <Layout style={styles.centeredContainer}>
                             <Text style={styles.text} style={styles.classificationText}>Try These Songs</Text>
-                            <Text style={styles.text}>Recommended by Spotify</Text>
+                            <Text style={styles.text} style={styles.spotifyGreen}>Recommended by Spotify</Text>
                             {listOfSpotifySongObjects}
                         </Layout>
                     </ScrollView>
@@ -133,7 +133,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingTop: Constants.statusBarHeight,
     paddingLeft: 10,
-
   },
   backIcon: {
     color: 'white',
@@ -150,9 +149,12 @@ const styles = StyleSheet.create({
   },
   classificationText: {
     fontSize: 30,
-    fontWeight: '100',
+    fontWeight: '200',
     textAlign: 'center',
     paddingTop: 10
+  },
+  spotifyGreen: {
+    color: '#1DB954'
   },
   breakLine: {
     borderBottomWidth: StyleSheet.hairlineWidth,

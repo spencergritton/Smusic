@@ -50,10 +50,11 @@ class CameraScreen extends React.Component {
     this.props.navigation.navigate('Results');
   }
 
+  // Split this into components in the future to enhance readability
   render() {
     const { hasCameraPermission, photo } = this.state;
     if (hasCameraPermission === null) {
-      return <View />;
+      return <View/>;
     } else if (hasCameraPermission === false) {
       return <Text>No access to camera</Text>;
     } else {
@@ -82,14 +83,10 @@ class CameraScreen extends React.Component {
                         <TouchableOpacity
                         onPress={() => {
                             if (this.state.flash == 'off') {
-                                this.setState({
-                                    flash: 'on'
-                                  });
+                              this.setState({ flash: 'on' });
                             }
                             else if (this.state.flash == 'on') {
-                                this.setState({
-                                    flash: 'off'
-                                  });
+                              this.setState({ flash: 'off' });
                             }
                         }}>
                             <Icon name='bolt' style={this.state.flash == 'on' ? styles.iconFlash : styles.iconFlashRed} size={30} />
