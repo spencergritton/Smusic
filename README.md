@@ -16,7 +16,7 @@ The end goal is for the app to work in the following way:
 5. Use expo to start the app either on your phone or on a simulator on your computer. Documentation here: https://docs.expo.io/versions/v35.0.0/
 
 ### *Current App Progress:*
-###### App Visual Design:
+###### App Visual Design (Lots to be done here):
 - <del>Create basic 3 tab application with screens for: Home, Camera, and Results of image classification</del>
 - <del>Allow users to take photos that save to the Results tab</del>
 - <del>Allow users to click photos they've already taken to view Spotify recommendations (randomly recommending as of now)</del>
