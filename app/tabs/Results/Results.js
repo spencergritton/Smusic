@@ -16,7 +16,7 @@ class Results extends React.Component {
             <ResultsHeader />
           </Layout>
           <Layout style={styles.emptyContainerCentered}>
-            <Text>No photos added. Go take on on the photos menu!</Text>
+            <Text>No photos added. Go take one on the photos menu!</Text>
           </Layout>
         </Layout>
       );
