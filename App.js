@@ -12,7 +12,7 @@ import { Icon } from 'react-native-vector-icons/FontAwesome5';
 import Home from './app/tabs/Home/Home';
 import CameraScreen from './app/tabs/Camera/CameraScreen';
 import Results from './app/tabs/Results/Results';
-import PhotoScreen from './app/tabs/Results/photoScreen/PhotoScreen';
+import PhotoScreen from './app/tabs/Results/PhotoScreen/PhotoScreen';
 
 const TabConfig = {
   Home: {

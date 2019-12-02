@@ -9,10 +9,11 @@ The end goal is for the app to work in the following way:
 3. Once the images are classified the user can click the image to view other songs that Spotify recommends based on the genre.
 
 ### *Installation:*
-1. Clone the project
-2. Run 'npm clean-install'
-3. Run 'npm start'
-4. Use expo to start the app either on your phone or on a simulator on your computer. Documentation here: https://docs.expo.io/versions/v35.0.0/get-started/installation/
+1. Run 'npm install expo-cli --global'
+2. Clone the project
+3. Run 'npm clean-install'
+4. Run 'npm start'
+5. Use expo to start the app either on your phone or on a simulator on your computer. Documentation here: https://docs.expo.io/versions/v35.0.0/
 
 ### *Current App Progress:*
 ###### App Visual Design:
