@@ -19,18 +19,19 @@ The end goal is for the app to work in the following way:
 - <del>Create basic 3 tab application with screens for: Home, Camera, and Results of image classification</del>
 - <del>Allow users to take photos that save to the Results tab</del>
 - <del>Allow users to click photos they've already taken to view Spotify recommendations (randomly recommending as of now)</del>
+- Remove GIFs and make app look more professional
+- Make dark mode black instead of blue
 - Add grabbing photos from camera roll
 - Make selfie's save the way a user would expect (no selfie flipping)
 - <del>Add dark theme (personal preference)</del>
 - Make settings menu (if there are enough settings to be changed... tbd)
-- Do something with home screen, unsure what should go there as of now
 - Clean up PhotoScreen.js to be more visually appealing and ensure user will not load page until all images are loaded
 - Make sure user's know they can click coverart of songs to open in Spotify
 - Add icons to bottom tab navigator
 - After all menus have been set up and satisfied, make first time interactive tutorial
 - Maybe remove 3 tab setup and just have two pages (one with photos/classifications and one with a camera)
 - Write on photos page what type of music photo was classified to
-- Add background/header to images page or home page so they aren't so plain
+- Add background/header to images page it isn't so plain
 ###### App Optimization and Design:
 - <del>Fetch request from Spotify working and returning recommendations based on requested category</del>
 - Figure out how to add TensorFlow model or maybe try another ML platform

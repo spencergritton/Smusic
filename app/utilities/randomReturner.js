@@ -10,13 +10,15 @@ import * as nine from '../../assets/gifs/9.gif';
 import * as ten from '../../assets/gifs/10.gif';
 import * as eleven from '../../assets/gifs/11.gif';
 
+// Change this to use urls in the future to keep size of project low
+// Remove GIF's in the future to make this more professional
 export function returnRandomGif() {
     const gifs = [one, two, three, four, five, six, seven, eight, nine, ten, eleven];
     return gifs[Math.floor(Math.random()*gifs.length)];
 }
 
 export function returnRandomStartingPhrase() {
-    const startingPhrases = ['Rad', 'Cool', 'Awesome', 'Dope', 'Out of this world', 'Delicious', 'Astounding', 'Super cala fragilistic expialidocious'];
+    const startingPhrases = ['Rad', 'Cool', 'Awesome', 'Dope', 'Out of this world', 'Astounding', 'Super cala fragilistic expialidocious'];
     return startingPhrases[Math.floor(Math.random()*startingPhrases.length)];
 }
 

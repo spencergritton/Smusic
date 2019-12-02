@@ -18,6 +18,7 @@ class PhotoScreen extends React.Component {
         classification: randomTypes.returnRandomGenre() // Using this until I figure out how to import TF model
     }
 
+    // Clean up all the spotify request stuff after tensor flow has been added
     componentDidMount = async() => {
         if (this.props.spotifyAuth.authorizationToken === null) {
             this.generateSpotifyAccessToken().then(
@@ -33,6 +34,7 @@ class PhotoScreen extends React.Component {
         }
     }
 
+    // Send this to redux store in the future
     generateSpotifyAccessToken = async() => {
         const Buffer = require("buffer").Buffer;
         const encodedAuth = new Buffer(SpotifyConfig.clientId + ':' + SpotifyConfig.clientSecret).toString('base64');
@@ -49,6 +51,7 @@ class PhotoScreen extends React.Component {
         return data;
     }
 
+    // Same as above with redux store
     requestSpotifyTracks = async(authorizationToken, genre) => {
         let response = await fetch('https://api.spotify.com/v1/recommendations?limit=5&market=US&seed_genres=' + genre, {
             method: 'GET',
@@ -62,6 +65,7 @@ class PhotoScreen extends React.Component {
         return data;
     }
 
+    // Turn this into components
     render() {
         if (this.state.spotifyRequestJson === null) {
             return(

@@ -4,6 +4,7 @@ import { Layout, Text } from 'react-native-ui-kitten';
 import Constants from 'expo-constants';
 import HomeHeader from './HomeHeader';
 
+// This screen is more or less blank right now, may remove it in the future
 export default class Home extends React.Component {
   render() {
     return (

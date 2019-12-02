@@ -6,6 +6,7 @@ import Constants from 'expo-constants';
 import ClickablePhoto from './ClickablePhoto';
 import ResultsHeader from './ResultsHeader';
 
+// Maybe make each possible page a component here
 class Results extends React.Component {
   render() {
     if (this.props.photos.photosList.length === 0) {
