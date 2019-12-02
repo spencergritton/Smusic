@@ -4,15 +4,15 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createStackNavigator } from 'react-navigation-stack';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import photoReducer from '../reducers/rootReducer';
-import NavigationService from './NavigationService'
+import photoReducer from './reducers/rootReducer';
+import NavigationService from './app/NavigationService'
 import { ApplicationProvider, BottomNavigation, BottomNavigationTab, Layout } from 'react-native-ui-kitten';
 import { mapping, dark } from '@eva-design/eva';
 import { Icon } from 'react-native-vector-icons/FontAwesome5';
-import Home from './tabs/Home/Home';
-import CameraScreen from './tabs/Camera/CameraScreen';
-import Results from './tabs/Results/Results';
-import PhotoScreen from './tabs/Results/photoScreen/PhotoScreen';
+import Home from './app/tabs/Home/Home';
+import CameraScreen from './app/tabs/Camera/CameraScreen';
+import Results from './app/tabs/Results/Results';
+import PhotoScreen from './app/tabs/Results/photoScreen/PhotoScreen';
 
 const TabConfig = {
   Home: {
