@@ -19,6 +19,7 @@ The end goal is for the app to work in the following way:
 - <del>Create basic 3 tab application with screens for: Home, Camera, and Results of image classification</del>
 - <del>Allow users to take photos that save to the Results tab</del>
 - <del>Allow users to click photos they've already taken to view Spotify recommendations (randomly recommending as of now)</del>
+- Think of better app name
 - Remove GIFs and make app look more professional
 - Make dark mode black instead of blue
 - Add grabbing photos from camera roll
