@@ -4,7 +4,7 @@ import { Layout, Text } from 'react-native-ui-kitten';
 import Constants from 'expo-constants';
 import HomeHeader from './HomeHeader';
 
-// This screen is more or less blank right now, may remove it in the future
+// This screen will be removed in the future and the "Results" screen will take its place as the home page
 export default class Home extends React.Component {
   render() {
     return (
