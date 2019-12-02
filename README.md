@@ -1,6 +1,6 @@
-**#Smusic**<br>
+#**Smusic**<br>
 
-*###Summary:* <br>
+###*Summary:* <br>
 Smusic is an **in progress** cross-platform (only tested on iOS thus far) react native application with the goal of recommending music to users based on photos they take or upload.
 
 The end goal is for the app to work in the following way:
@@ -8,13 +8,13 @@ The end goal is for the app to work in the following way:
 2. Those pictures are classified to one of fifteen Spotify genres using a machine learning algorithm developed using TensorFlow and Keras.
 3. Once the images are classified the user can click the image to view other songs that Spotify recommends based on the genre.
 
-*###Installation:*
+###*Installation:*
 1. Clone the project
 2. Run 'npm clean-install'
 3. Run 'npm start'
 4. Use expo to start the app either on your phone or on a simulator on your computer. Documentation here: https://docs.expo.io/versions/v35.0.0/get-started/installation/
 
-*###Current App Progress:*
+###*Current App Progress:*
 ######App Visual Design:
 - <del>Create basic 3 tab application with screens for: Home, Camera, and Results of image classification</del>
 - Add grabbing photos from camera roll
